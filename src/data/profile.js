@@ -89,5 +89,5 @@ export const languages = [
   { name: "Spanish", level: "Native" },
   { name: "English", level: "C1 Fluent" },
   { name: "Portuguese", level: "B1 Intermediate" },
-  { name: "Chinese (Mandarin)", level: "A1 Basic" },
+  { name: "Danish", level: "Beginner" },
 ];
