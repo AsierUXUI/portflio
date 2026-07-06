@@ -1,3 +1,4 @@
+import { profile } from "../data/profile.js";
 import "./Footer.css";
 
 function Footer() {
@@ -6,18 +7,20 @@ function Footer() {
   return (
     <footer className="footer">
       <div className="container footer-inner">
-        <p>© {year} Asier Morais</p>
+        <p>
+          © {year} {profile.name}
+        </p>
         <ul className="footer-links">
           <li>
-            <a href="mailto:hello@example.com">hello@example.com</a>
+            <a href={`mailto:${profile.email}`}>{profile.email}</a>
           </li>
           <li>
-            <a href="https://github.com/AsierUXUI" target="_blank" rel="noreferrer">
+            <a href={profile.github} target="_blank" rel="noreferrer">
               GitHub
             </a>
           </li>
           <li>
-            <a href="https://linkedin.com" target="_blank" rel="noreferrer">
+            <a href={profile.linkedin} target="_blank" rel="noreferrer">
               LinkedIn
             </a>
           </li>

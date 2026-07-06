@@ -36,6 +36,11 @@
   flex: 1;
 }
 
+.project-meta {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
 .project-tags {
   display: flex;
   flex-wrap: wrap;

@@ -12,10 +12,7 @@ function CaseStudy() {
 
   return (
     <article className="case-study">
-      <header
-        className="case-hero"
-        style={{ background: project.accent }}
-      >
+      <header className="case-hero" style={{ background: project.accent }}>
         <div className="container">
           <p className="eyebrow" style={{ color: "rgba(255,255,255,0.8)" }}>
             Case study
@@ -28,20 +25,20 @@ function CaseStudy() {
       <div className="container case-body">
         <dl className="case-meta">
           <div>
+            <dt>Company</dt>
+            <dd>{project.company}</dd>
+          </div>
+          <div>
             <dt>Role</dt>
             <dd>{project.role}</dd>
           </div>
           <div>
-            <dt>Timeline</dt>
-            <dd>{project.timeline}</dd>
+            <dt>Location</dt>
+            <dd>{project.location}</dd>
           </div>
           <div>
             <dt>Year</dt>
             <dd>{project.year}</dd>
-          </div>
-          <div>
-            <dt>Tools</dt>
-            <dd>{project.tools.join(", ")}</dd>
           </div>
         </dl>
 
@@ -51,30 +48,21 @@ function CaseStudy() {
         </section>
 
         <section className="case-section">
-          <h2>The problem</h2>
-          <p>{project.problem}</p>
-        </section>
-
-        <section className="case-section">
-          <h2>Process</h2>
-          <ol className="case-process">
-            {project.process.map((step, i) => (
-              <li key={step.title}>
-                <span className="case-process-index">
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <div>
-                  <h3>{step.title}</h3>
-                  <p>{step.detail}</p>
-                </div>
-              </li>
+          <h2>What I did</h2>
+          <ul className="case-list">
+            {project.responsibilities.map((item) => (
+              <li key={item}>{item}</li>
             ))}
-          </ol>
+          </ul>
         </section>
 
         <section className="case-section case-outcome">
-          <h2>Outcome</h2>
-          <p>{project.outcome}</p>
+          <h2>Impact</h2>
+          <ul className="case-list">
+            {project.highlights.map((item) => (
+              <li key={item}>{item}</li>
+            ))}
+          </ul>
         </section>
 
         <Link to="/" className="btn case-back">

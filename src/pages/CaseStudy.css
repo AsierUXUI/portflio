@@ -69,35 +69,29 @@
   max-width: 68ch;
 }
 
-.case-process {
+.case-list {
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 14px;
+  max-width: 68ch;
 }
 
-.case-process li {
-  display: flex;
-  gap: 20px;
-}
-
-.case-process-index {
-  font-family: var(--font-display);
-  font-size: 14px;
-  font-weight: 600;
-  color: var(--accent);
-  flex-shrink: 0;
-  padding-top: 2px;
-}
-
-.case-process h3 {
-  font-size: 17px;
-  font-weight: 600;
-  margin-bottom: 6px;
-}
-
-.case-process p {
+.case-list li {
   color: var(--text-muted);
   font-size: 16px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.case-list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 9px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
 }
 
 .case-outcome {

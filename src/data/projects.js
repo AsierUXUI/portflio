@@ -1,143 +1,50 @@
 export const projects = [
   {
-    slug: "fintech-onboarding",
-    title: "Rebuilding onboarding for a fintech app",
-    tagline: "Cut sign-up drop-off by redesigning a 9-step form into a guided 3-step flow.",
-    year: "2025",
-    role: "Lead Product Designer",
-    timeline: "8 weeks",
-    tools: ["Figma", "Maze", "Notion"],
-    tags: ["Mobile", "UX Research", "0→1"],
+    slug: "axo-group-uscore",
+    title: "Redesigning uScore, a Nordic fintech SaaS product",
+    company: "Axo Group",
+    role: "UX Designer (CRO & Product Focus)",
+    location: "Copenhagen, Denmark",
+    year: "2023 – Present",
+    tags: ["SaaS", "Fintech", "CRO", "1M+ users"],
     accent: "#3654A6",
+    tagline:
+      "Took over design for a financial SaaS product with over a million users in the Nordics after its initial launch, and helped grow it into a profitable business unit.",
     summary:
-      "A fintech client's mobile onboarding lost most users before they reached their first transaction. The task was to find out why and design a flow people would actually finish.",
-    problem:
-      "Analytics showed a 62% drop-off across a 9-screen onboarding form. Support tickets pointed to confusing identity-verification steps and unclear progress. Placeholder: replace with your real discovery notes and data.",
-    process: [
-      {
-        title: "Research",
-        detail:
-          "Reviewed session recordings and ran 6 moderated interviews with recent drop-offs to find the exact steps where people gave up.",
-      },
-      {
-        title: "Flow mapping",
-        detail:
-          "Consolidated 9 screens into 3 logical stages, moved identity verification later so users saw value before being asked for sensitive documents.",
-      },
-      {
-        title: "Prototyping & testing",
-        detail:
-          "Tested two prototypes with 12 users via Maze, iterated on copy and error states based on task-completion and confidence scores.",
-      },
+      "I took over the design for uScore, a financial SaaS product with over a million users across the Nordics, shortly after its initial launch. Working closely with product, marketing, and research teams, I led a redesign and rethink of the platform to better meet user needs and business goals.",
+    responsibilities: [
+      "Gathered user insights through interviews and data to reshape the UX and UI of the platform.",
+      "Worked cross-functionally with product, marketing, and research teams to align design decisions with business goals.",
+      "Contributed to marketing materials for subsequent campaigns.",
     ],
-    outcome:
-      "Placeholder result: +24% completion rate in the first month post-launch, verified against a holdout A/B group.",
+    highlights: [
+      "The product grew into a profitable business unit within the first year.",
+      "User reviews improved from 3.7 to 4.3.",
+    ],
     cover: "01",
   },
   {
-    slug: "design-system",
-    title: "A design system for a growing SaaS platform",
-    tagline: "Unified five product teams around one component library and token set.",
-    year: "2024",
-    role: "Design Systems Lead",
-    timeline: "4 months",
-    tools: ["Figma", "Storybook", "React"],
-    tags: ["Design Systems", "Component Library", "Cross-team"],
+    slug: "flat101-cro",
+    title: "CRO strategy and design consultancy for international clients",
+    company: "Flat 101",
+    role: "UX Designer, CRO & Design Consultant",
+    location: "Madrid, Spain",
+    year: "2021 – 2023",
+    tags: ["CRO", "Consultancy", "Design Systems", "Multi-client"],
     accent: "#2F6F5E",
+    tagline:
+      "Collaborated with multiple teams and international clients on UX strategies aimed at improving conversion rates and key business metrics.",
     summary:
-      "Five product squads were shipping visually inconsistent UI with duplicated components. The goal was a shared system that didn't slow teams down.",
-    problem:
-      "Each team had its own button, spacing, and color variants. Placeholder: swap in the real audit numbers — e.g., how many duplicate components existed before the system shipped.",
-    process: [
-      {
-        title: "Audit",
-        detail:
-          "Catalogued every UI pattern in production across teams and grouped near-duplicates to define a minimal core set.",
-      },
-      {
-        title: "Tokens & components",
-        detail:
-          "Defined a token layer (color, spacing, type) and built the first 20 components in Figma paired 1:1 with React implementations.",
-      },
-      {
-        title: "Rollout",
-        detail:
-          "Ran office hours and migration guides per team, tracked adoption weekly instead of mandating a big-bang switch.",
-      },
+      "At Flat 101, I worked across multiple teams and international clients on UX strategy focused on conversion rate optimization, taking the lead on or contributing to projects spanning user research, design system migrations, and product optimization.",
+    responsibilities: [
+      "Led and contributed to user research across client projects.",
+      "Worked on design system migrations for client products.",
+      "Turned complex data and user insights into practical design solutions aimed at improving conversion rates and business metrics.",
     ],
-    outcome:
-      "Placeholder result: adopted by all 5 teams within one quarter, new feature UI review time dropped noticeably.",
+    highlights: [
+      "Delivered CRO-focused design strategy across multiple international client accounts.",
+    ],
     cover: "02",
-  },
-  {
-    slug: "care-scheduling",
-    title: "Simplifying appointment booking for a healthcare provider",
-    tagline: "Redesigned a confusing scheduling flow for patients with low digital confidence.",
-    year: "2024",
-    role: "Product Designer",
-    timeline: "6 weeks",
-    tools: ["Figma", "UserTesting", "FigJam"],
-    tags: ["Accessibility", "Healthcare", "UX Research"],
-    accent: "#8A4B2E",
-    summary:
-      "Patients, including many older adults, struggled to book appointments online and were calling the front desk instead, overloading staff.",
-    problem:
-      "Placeholder: describe the real baseline — e.g., call-center volume, task success rate in usability tests, or specific accessibility failures found in an audit.",
-    process: [
-      {
-        title: "Accessibility audit",
-        detail:
-          "Ran the existing flow against WCAG 2.1 AA and found low-contrast text, unlabeled form fields, and no error recovery guidance.",
-      },
-      {
-        title: "Co-design sessions",
-        detail:
-          "Worked with 5 patients aged 55+ to redesign the flow around plain language, larger touch targets, and a single clear next action per screen.",
-      },
-      {
-        title: "Validation",
-        detail:
-          "Tested revised flow with the same group plus new participants, tracked task completion and time-on-task.",
-      },
-    ],
-    outcome:
-      "Placeholder result: task completion rate rose from baseline to a majority of first-time users completing booking unassisted.",
-    cover: "03",
-  },
-  {
-    slug: "checkout-optimization",
-    title: "Reducing checkout abandonment for an e-commerce brand",
-    tagline: "Streamlined a 5-step checkout and rebuilt trust signals at the point of payment.",
-    year: "2023",
-    role: "UX/UI Designer",
-    timeline: "5 weeks",
-    tools: ["Figma", "Hotjar", "Google Analytics"],
-    tags: ["E-commerce", "Conversion", "UI"],
-    accent: "#5B4B8A",
-    summary:
-      "Cart abandonment was concentrated at the payment step. The brief was to find friction points and redesign for trust and clarity.",
-    problem:
-      "Placeholder: replace with the real funnel numbers — where exactly users dropped off and what heatmaps/session replays revealed.",
-    process: [
-      {
-        title: "Funnel analysis",
-        detail:
-          "Used analytics and session replays to isolate the payment step as the highest-drop point in the funnel.",
-      },
-      {
-        title: "Redesign",
-        detail:
-          "Reduced the flow from 5 steps to 2, added persistent order summary, and surfaced security badges and return policy near the payment button.",
-      },
-      {
-        title: "A/B test",
-        detail:
-          "Ran the new flow against the original for 3 weeks across a meaningful share of traffic before full rollout.",
-      },
-    ],
-    outcome:
-      "Placeholder result: measurable lift in completed checkouts, with the largest gains on mobile.",
-    cover: "04",
   },
 ];
 

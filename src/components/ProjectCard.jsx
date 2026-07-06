@@ -8,6 +8,9 @@ function ProjectCard({ project }) {
         <span>{project.cover}</span>
       </div>
       <div className="project-body">
+        <p className="project-meta">
+          {project.company} · {project.year}
+        </p>
         <div className="project-tags">
           {project.tags.map((tag) => (
             <span key={tag} className="project-tag">
