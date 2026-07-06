@@ -11,6 +11,7 @@ function CaseStudyMedia({ project }) {
             src={project.prototypeUrl}
             title={`${project.title} — live prototype`}
             loading="lazy"
+            scrolling="no"
           />
         </div>
         <p className="case-prototype-caption">Live, working prototype — click around.</p>
