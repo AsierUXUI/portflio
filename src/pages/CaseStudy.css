@@ -1,38 +1,43 @@
 .case-hero {
-  padding: 88px 0 56px;
+  padding: 132px 0 68px;
   color: #fff;
 }
 
 .case-hero h1 {
   color: #fff;
-  font-size: clamp(28px, 4.5vw, 44px);
+  font-size: clamp(30px, 4.6vw, 48px);
+  font-weight: 500;
   max-width: 22ch;
-  margin: 14px 0 18px;
+  margin: 16px 0 20px;
 }
 
 .case-tagline {
-  color: rgba(255, 255, 255, 0.85);
+  color: rgba(255, 255, 255, 0.88);
   font-size: 18px;
+  line-height: 1.6;
   max-width: 52ch;
 }
 
 .case-status {
   display: inline-block;
   margin-left: 10px;
-  padding: 2px 10px;
+  padding: 3px 11px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.2);
   color: #fff;
+  font-family: var(--font-display);
   font-size: 11px;
+  font-weight: 600;
   letter-spacing: 0.06em;
+  text-transform: uppercase;
 }
 
 .case-layout {
   display: grid;
   grid-template-columns: minmax(320px, 420px) 1fr;
-  gap: 48px;
+  gap: 56px;
   align-items: start;
-  padding: 48px 0 96px;
+  padding: 64px 0 112px;
 }
 
 .case-layout-single {
@@ -48,7 +53,7 @@
 
 .case-media {
   position: sticky;
-  top: 96px;
+  top: 100px;
 }
 
 @media (max-width: 900px) {
@@ -77,7 +82,7 @@
   text-align: center;
   font-size: 14px;
   color: var(--text-muted);
-  margin-top: 14px;
+  margin-top: 16px;
 }
 
 .case-prototype-caption a {
@@ -93,9 +98,10 @@
 
 .case-gallery-item {
   border: 1px solid var(--border);
-  border-radius: 14px;
+  border-radius: 16px;
   overflow: hidden;
   background: var(--surface);
+  box-shadow: var(--shadow-sm);
 }
 
 .case-gallery-item img {
@@ -107,19 +113,20 @@
   text-align: center;
   font-size: 13px;
   color: var(--text-muted);
-  padding: 10px;
+  padding: 11px;
   border-top: 1px solid var(--border);
 }
 
 .case-meta {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  padding: 24px;
+  gap: 22px;
+  padding: 26px 28px;
   border: 1px solid var(--border);
-  border-radius: 14px;
+  border-radius: 16px;
   background: var(--surface);
-  margin-bottom: 56px;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 64px;
 }
 
 .case-layout-single .case-meta {
@@ -133,11 +140,13 @@
 }
 
 .case-meta dt {
-  font-size: 12px;
+  font-family: var(--font-display);
+  font-size: 11.5px;
+  font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.08em;
   color: var(--text-muted);
-  margin-bottom: 4px;
+  margin-bottom: 5px;
 }
 
 .case-meta dd {
@@ -148,32 +157,34 @@
 }
 
 .case-section {
-  margin-bottom: 48px;
+  margin-bottom: 56px;
 }
 
 .case-section h2 {
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 14px;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 16px;
 }
 
 .case-section > p {
   color: var(--text-muted);
   font-size: 17px;
+  line-height: 1.7;
   max-width: 68ch;
 }
 
 .case-list {
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 16px;
   max-width: 68ch;
 }
 
 .case-list li {
   color: var(--text-muted);
   font-size: 16px;
-  padding-left: 20px;
+  line-height: 1.6;
+  padding-left: 22px;
   position: relative;
 }
 
@@ -189,20 +200,20 @@
 }
 
 .case-outcome {
-  padding: 24px;
-  border-radius: 14px;
+  padding: 26px 28px;
+  border-radius: 16px;
   background: var(--surface);
   border: 1px solid var(--border);
 }
 
 .case-back {
-  margin-top: 16px;
+  margin-top: 20px;
 }
 
 /* Sectioned case studies (Concept / Ideation / Design / Conclusions) */
 
 .case-sectioned {
-  padding: 48px 0 96px;
+  padding: 64px 0 112px;
 }
 
 .case-sectioned .case-meta {
@@ -219,34 +230,35 @@
 .case-block {
   display: grid;
   grid-template-columns: minmax(260px, 380px) 1fr;
-  gap: 40px;
+  gap: 44px;
   align-items: start;
-  margin-bottom: 72px;
+  margin-bottom: 80px;
 }
 
 @media (max-width: 860px) {
   .case-block {
     grid-template-columns: 1fr;
-    gap: 20px;
+    gap: 22px;
   }
 }
 
 .case-block h2 {
-  font-size: 22px;
-  font-weight: 600;
-  margin-bottom: 14px;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 16px;
 }
 
 .case-block p {
   color: var(--text-muted);
   font-size: 16px;
+  line-height: 1.7;
 }
 
 .case-block-image {
   width: 100%;
-  border-radius: 14px;
+  border-radius: 16px;
   border: 1px solid var(--border);
-  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+  box-shadow: var(--shadow-md);
 }
 
 .conclusions-grid {
@@ -262,19 +274,22 @@
 }
 
 .conclusion-card {
-  padding: 22px;
-  border-radius: 14px;
+  padding: 24px;
+  border-radius: 16px;
   background: var(--surface);
   border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
 }
 
 .conclusion-card h3 {
-  font-size: 16px;
+  font-family: var(--font-display);
+  font-size: 15.5px;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 11px;
 }
 
 .conclusion-card p {
   color: var(--text-muted);
   font-size: 15px;
+  line-height: 1.65;
 }

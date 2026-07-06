@@ -1,49 +1,56 @@
 .hero {
-  padding: 120px 0 96px;
+  padding: 156px 0 108px;
+}
+
+.hero .eyebrow {
+  display: inline-block;
+  margin-bottom: 22px;
 }
 
 .hero h1 {
-  font-size: clamp(32px, 5vw, 52px);
-  font-weight: 600;
+  font-size: clamp(38px, 6vw, 66px);
+  font-weight: 500;
+  line-height: 1.08;
   letter-spacing: -0.02em;
-  max-width: 16ch;
-  margin: 20px 0 28px;
+  max-width: 15ch;
+  margin: 0 0 30px;
 }
 
 .hero-sub {
   max-width: 56ch;
-  font-size: 18px;
+  font-size: 19px;
+  line-height: 1.7;
   color: var(--text-muted);
-  margin-bottom: 16px;
+  margin-bottom: 18px;
 }
 
 .hero-location {
   font-size: 15px;
   color: var(--text-muted);
-  margin-bottom: 32px;
+  margin-bottom: 40px;
 }
 
 .hero-actions {
   display: flex;
-  gap: 14px;
+  gap: 16px;
   flex-wrap: wrap;
 }
 
 .section-title {
-  font-size: clamp(26px, 4vw, 36px);
-  font-weight: 600;
+  font-size: clamp(30px, 4.2vw, 44px);
+  font-weight: 500;
   letter-spacing: -0.01em;
-  margin: 10px 0 40px;
+  margin: 12px 0 48px;
 }
 
 .work {
-  padding: 64px 0;
+  padding: 88px 0;
 }
 
 .project-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 24px;
+  gap: 28px;
 }
 
 @media (max-width: 780px) {
@@ -53,7 +60,7 @@
 }
 
 .about {
-  padding: 64px 0;
+  padding: 104px 0;
   background: var(--surface);
   border-top: 1px solid var(--border);
   border-bottom: 1px solid var(--border);
@@ -61,15 +68,20 @@
 
 .about-bio p {
   color: var(--text-muted);
-  margin-bottom: 18px;
-  max-width: 68ch;
+  margin-bottom: 20px;
+  max-width: 66ch;
   font-size: 17px;
+  line-height: 1.75;
 }
 
 .about-subhead {
-  font-size: 18px;
+  font-family: var(--font-display);
+  font-size: 13px;
   font-weight: 600;
-  margin: 40px 0 20px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin: 52px 0 24px;
 }
 
 .skills-grid {
@@ -91,36 +103,44 @@
 }
 
 .skill-card {
-  padding: 20px;
-  border-radius: 14px;
+  padding: 22px 24px;
+  border-radius: 16px;
   background: var(--bg);
   border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.skill-card:hover {
+  transform: translateY(-3px);
+  box-shadow: var(--shadow-md);
 }
 
 .skill-card h4 {
   font-size: 15px;
   font-weight: 600;
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 .skill-card ul {
   display: flex;
   flex-direction: column;
-  gap: 6px;
+  gap: 8px;
 }
 
 .skill-card li {
-  font-size: 14px;
+  font-size: 14.5px;
   color: var(--text-muted);
-  padding-left: 14px;
+  padding-left: 16px;
   position: relative;
+  line-height: 1.5;
 }
 
 .skill-card li::before {
   content: "";
   position: absolute;
   left: 0;
-  top: 9px;
+  top: 8px;
   width: 5px;
   height: 5px;
   border-radius: 50%;
@@ -130,25 +150,34 @@
 .about-columns {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 48px;
+  gap: 24px;
   margin-top: 8px;
 }
 
 @media (max-width: 600px) {
   .about-columns {
     grid-template-columns: 1fr;
-    gap: 32px;
+    gap: 20px;
   }
+}
+
+.about-columns > div {
+  padding: 24px 26px;
+  border-radius: 16px;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow-sm);
 }
 
 .education-list,
 .language-list {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 20px;
 }
 
 .education-school {
+  font-family: var(--font-display);
   font-weight: 600;
   font-size: 15px;
 }
@@ -156,43 +185,53 @@
 .education-degree {
   color: var(--text-muted);
   font-size: 14px;
-  margin-top: 2px;
+  margin-top: 3px;
 }
 
 .education-meta {
   color: var(--text-muted);
   font-size: 13px;
-  margin-top: 2px;
+  margin-top: 3px;
 }
 
 .language-list li {
   display: flex;
   justify-content: space-between;
+  align-items: baseline;
+  font-family: var(--font-display);
   font-size: 15px;
+  font-weight: 500;
   border-bottom: 1px solid var(--border);
-  padding-bottom: 10px;
+  padding-bottom: 12px;
+}
+
+.language-list li:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
 }
 
 .language-level {
   color: var(--text-muted);
-  font-size: 14px;
+  font-size: 13.5px;
+  font-weight: 400;
 }
 
 .contact {
-  padding: 96px 0 120px;
+  padding: 124px 0 148px;
   text-align: center;
 }
 
 .contact-copy {
-  max-width: 48ch;
-  margin: 0 auto 32px;
+  max-width: 46ch;
+  margin: 0 auto 36px;
   color: var(--text-muted);
-  font-size: 17px;
+  font-size: 18px;
+  line-height: 1.7;
 }
 
 .contact-actions {
   display: flex;
-  gap: 14px;
+  gap: 16px;
   justify-content: center;
   flex-wrap: wrap;
 }
