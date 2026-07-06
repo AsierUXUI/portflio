@@ -15,7 +15,7 @@ function ProjectCard({ project }) {
       )}
       <div className="project-body">
         <p className="project-meta">
-          {project.company} · {project.year}
+          {project.client ?? project.company} · {project.duration ?? project.year}
         </p>
         <div className="project-tags">
           {project.tags.map((tag) => (

@@ -48,6 +48,13 @@ function Home() {
             ))}
           </div>
 
+          <h3 className="about-subhead">How I approach design</h3>
+          <div className="about-bio">
+            {profile.approach.map((paragraph) => (
+              <p key={paragraph}>{paragraph}</p>
+            ))}
+          </div>
+
           <h3 className="about-subhead">Skills</h3>
           <div className="skills-grid">
             {skillGroups.map((group) => (

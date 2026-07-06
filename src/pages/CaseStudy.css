@@ -16,6 +16,17 @@
   max-width: 52ch;
 }
 
+.case-status {
+  display: inline-block;
+  margin-left: 10px;
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.18);
+  color: #fff;
+  font-size: 11px;
+  letter-spacing: 0.06em;
+}
+
 .case-layout {
   display: grid;
   grid-template-columns: minmax(320px, 420px) 1fr;
@@ -186,4 +197,84 @@
 
 .case-back {
   margin-top: 16px;
+}
+
+/* Sectioned case studies (Concept / Ideation / Design / Conclusions) */
+
+.case-sectioned {
+  padding: 48px 0 96px;
+}
+
+.case-sectioned .case-meta {
+  grid-template-columns: repeat(5, 1fr);
+  max-width: 100%;
+}
+
+@media (max-width: 900px) {
+  .case-sectioned .case-meta {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.case-block {
+  display: grid;
+  grid-template-columns: minmax(260px, 380px) 1fr;
+  gap: 40px;
+  align-items: start;
+  margin-bottom: 72px;
+}
+
+@media (max-width: 860px) {
+  .case-block {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+}
+
+.case-block h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 14px;
+}
+
+.case-block p {
+  color: var(--text-muted);
+  font-size: 16px;
+}
+
+.case-block-image {
+  width: 100%;
+  border-radius: 14px;
+  border: 1px solid var(--border);
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.08);
+}
+
+.conclusions-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+@media (max-width: 860px) {
+  .conclusions-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.conclusion-card {
+  padding: 22px;
+  border-radius: 14px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+.conclusion-card h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.conclusion-card p {
+  color: var(--text-muted);
+  font-size: 15px;
 }

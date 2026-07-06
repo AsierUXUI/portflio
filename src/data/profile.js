@@ -11,6 +11,11 @@ export const profile = {
     "Designer with a Fine Arts background from Spain and over 4 years of experience covering the full design process, from early concepts to final delivery, always working closely with business teams.",
     "I'm collaborative by nature and enjoy bringing positive, easygoing energy to projects while staying focused on creating meaningful, user-centered solutions that positively impact both users and the business.",
   ],
+  approach: [
+    "It has always seemed to me that there are countless things in the world that are poorly designed, or that were logical once but haven't kept up as needs changed — not just objects, but processes, institutions, systems.",
+    "Societies and people are constantly changing, and what worked yesterday won't necessarily work tomorrow. I think it's key to approach design from empathy and flexibility, with a deep understanding of people's needs but the ability to adjust as those needs change.",
+    "Data matters, and having solid, well-founded evidence to work from is important — but without a doubt the most fundamental thing is staying in direct, continuous contact with users. A lot gets lost between KPIs and metrics that's often key to understanding how someone actually experiences a product, both functionally and emotionally.",
+  ],
 };
 
 export const skillGroups = [
