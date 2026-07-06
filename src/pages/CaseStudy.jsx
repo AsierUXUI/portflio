@@ -13,12 +13,7 @@ function CaseStudyMedia({ project }) {
             loading="lazy"
           />
         </div>
-        <p className="case-prototype-caption">
-          Live, working prototype — click around.{" "}
-          <a href={project.prototypeUrl} target="_blank" rel="noreferrer">
-            Open in a new tab →
-          </a>
-        </p>
+        <p className="case-prototype-caption">Live, working prototype — click around.</p>
       </>
     );
   }
