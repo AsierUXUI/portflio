@@ -182,6 +182,21 @@
     .__tweaks-toggle, .tweaks {
       display: none !important;
     }
+
+    /* Portfolio embed: just the floating phone, no page chrome around it —
+       hide the screen-label row and let the phone sit on a transparent
+       background instead of the prototype's own light-gray page. */
+    html, body {
+      background: transparent !important;
+    }
+    body {
+      min-height: 0 !important;
+      align-items: center !important;
+      padding: 12px !important;
+    }
+    .label-row {
+      display: none !important;
+    }
   </style>
 </head>
 <body>
