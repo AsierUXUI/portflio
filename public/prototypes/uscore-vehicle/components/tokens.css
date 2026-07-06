@@ -1,0 +1,34 @@
+/* Uscore tokens — subset used by the house redesign */
+:root {
+  --color-surface-page:   #F3F8F6;
+  --color-surface:        #FFFFFF;
+  --color-surface-soft:   #F6FAF7;
+  --color-heading:        #1E242F;
+  --color-body:           #3A4B5A;
+  --color-body-muted:     #6F889C;
+  --color-info:           #1A9070;
+  --color-success:        #157A5C;
+  --color-warning:        #EA7C1F;
+  --color-border-subtle:  #E1EAF2;
+  --color-border:         #C2CED9;
+  --color-action:         #1A9070;
+  --color-action-hover:   #157A5C;
+  --color-cta:            #1A9070;
+  --color-cta-text:       #323E4E;
+  --color-cta-text-inverse: #FFFFFF;
+  --color-on-cta:         #FFFFFF;
+  --color-discount:       #C1933E;
+  --color-chart-house:    #1A9070;
+  --color-gradient-from:  #1A9070;
+  --color-gradient-to:    #2AAF88;
+
+  --radius-card: 12px;
+  --radius-pill: 9999px;
+  --radius-sm: 8px;
+
+  --font: 'Poppins', ui-sans-serif, system-ui, sans-serif;
+}
+
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; font-family: var(--font); color: var(--color-body); -webkit-font-smoothing: antialiased; }
+button { font-family: inherit; border: 0; background: none; cursor: pointer; padding: 0; color: inherit; }

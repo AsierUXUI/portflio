@@ -22,19 +22,39 @@ function CaseStudy() {
         </div>
       </header>
 
-      {project.images && (
+      {project.prototypeUrl ? (
         <section className="case-gallery">
-          <div className="container case-gallery-grid">
-            <figure className="case-gallery-item case-gallery-desktop">
-              <img src={project.images.desktop} alt={`${project.title} — desktop view`} />
-              <figcaption>Desktop</figcaption>
-            </figure>
-            <figure className="case-gallery-item case-gallery-mobile">
-              <img src={project.images.mobile} alt={`${project.title} — mobile view`} />
-              <figcaption>Mobile</figcaption>
-            </figure>
+          <div className="container">
+            <div className="case-prototype-frame">
+              <iframe
+                src={project.prototypeUrl}
+                title={`${project.title} — live prototype`}
+                loading="lazy"
+              />
+            </div>
+            <p className="case-prototype-caption">
+              Live, working prototype — click around.{" "}
+              <a href={project.prototypeUrl} target="_blank" rel="noreferrer">
+                Open in a new tab →
+              </a>
+            </p>
           </div>
         </section>
+      ) : (
+        project.images && (
+          <section className="case-gallery">
+            <div className="container case-gallery-grid">
+              <figure className="case-gallery-item case-gallery-desktop">
+                <img src={project.images.desktop} alt={`${project.title} — desktop view`} />
+                <figcaption>Desktop</figcaption>
+              </figure>
+              <figure className="case-gallery-item case-gallery-mobile">
+                <img src={project.images.mobile} alt={`${project.title} — mobile view`} />
+                <figcaption>Mobile</figcaption>
+              </figure>
+            </div>
+          </section>
+        )
       )}
 
       <div className="container case-body">

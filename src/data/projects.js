@@ -28,6 +28,7 @@ export const projects = [
       mobile: uscoreVehicleMobile,
       desktop: uscoreVehicleDesktop,
     },
+    prototypeUrl: `${import.meta.env.BASE_URL}prototypes/uscore-vehicle/index.html`,
   },
   {
     slug: "axo-group-uscore",
