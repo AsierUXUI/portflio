@@ -4,9 +4,15 @@ import "./ProjectCard.css";
 function ProjectCard({ project }) {
   return (
     <Link to={`/work/${project.slug}`} className="project-card">
-      <div className="project-cover" style={{ background: project.accent }}>
-        <span>{project.cover}</span>
-      </div>
+      {project.images?.desktop ? (
+        <div className="project-cover project-cover-image">
+          <img src={project.images.desktop} alt="" />
+        </div>
+      ) : (
+        <div className="project-cover" style={{ background: project.accent }}>
+          <span>{project.cover}</span>
+        </div>
+      )}
       <div className="project-body">
         <p className="project-meta">
           {project.company} · {project.year}

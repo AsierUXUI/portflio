@@ -28,6 +28,18 @@
   color: rgba(255, 255, 255, 0.85);
 }
 
+.project-cover-image {
+  background: var(--bg);
+  align-items: flex-start;
+}
+
+.project-cover-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+}
+
 .project-body {
   padding: 24px;
   display: flex;

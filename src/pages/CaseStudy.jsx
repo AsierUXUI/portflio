@@ -22,6 +22,21 @@ function CaseStudy() {
         </div>
       </header>
 
+      {project.images && (
+        <section className="case-gallery">
+          <div className="container case-gallery-grid">
+            <figure className="case-gallery-item case-gallery-desktop">
+              <img src={project.images.desktop} alt={`${project.title} — desktop view`} />
+              <figcaption>Desktop</figcaption>
+            </figure>
+            <figure className="case-gallery-item case-gallery-mobile">
+              <img src={project.images.mobile} alt={`${project.title} — mobile view`} />
+              <figcaption>Mobile</figcaption>
+            </figure>
+          </div>
+        </section>
+      )}
+
       <div className="container case-body">
         <dl className="case-meta">
           <div>
