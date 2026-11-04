@@ -13,7 +13,89 @@ import mmiConcept from "../assets/case-studies/mmi-torre-cristal/concept.jpg";
 import mmiIdeation from "../assets/case-studies/mmi-torre-cristal/ideation.jpg";
 import mmiDesign from "../assets/case-studies/mmi-torre-cristal/design.jpg";
 
+import junkiConcept from "../assets/case-studies/junki/concept.jpg";
+import junkiCovers from "../assets/case-studies/junki/covers.jpg";
+import junkiAbout from "../assets/case-studies/junki/about.jpg";
+
 export const projects = [
+  {
+    slug: "junki-magazine",
+    title: "A 3D landing page for Junki, a Copenhagen zine collective",
+    client: "Junki Magazine",
+    company: "Personal project",
+    role: "Designer & AI-assisted front-end",
+    location: "Copenhagen, Denmark",
+    year: "2026",
+    team: "Me + Claude Code",
+    tags: ["AI-first workflow", "Three.js", "Creative coding", "Live site"],
+    accent: "#E0359B",
+    tagline:
+      "Designed and shipped the landing page for a Copenhagen zine collective I'm part of: a 3D carousel of printed zines, generated riso covers and an order form, built AI-first with Claude Code.",
+    liveUrl: "https://asieruxui.github.io/Junkimag/index.html",
+    images: { desktop: junkiConcept },
+    sections: [
+      {
+        key: "concept",
+        title: "Concept",
+        image: junkiConcept,
+        text: "Junki is a zine collective of artists and writers based in Copenhagen. Zines are physical, tactile objects, so a flat product grid felt wrong. The idea was a site where the zines feel like they're on the table in front of you: a diagonal row of 3D zines you scroll through one at a time, drag to flip to the back cover, and click to open. Printer's crop marks frame the zine in focus, and a halftone mouse trail in two riso inks echoes the way the zines are printed. Each zine opens into its own page without a page reload: the same 3D zine moves out of the row and into the detail view.",
+      },
+      {
+        key: "ideation",
+        title: "AI-first workflow",
+        image: junkiCovers,
+        text: "I built the whole site with Claude Code as my front-end pair. I worked as the designer and art director: I described what I wanted in plain language, reviewed every change on my phone and desktop, and asked for adjustments until it felt right. Claude Code wrote the code and opened a pull request for each round of feedback, which I reviewed and merged. Around 60 commits and 17 merged pull requests later, I had a WebGL site I couldn't have hand-coded in that time. Since most zines don't have scanned covers yet, the covers are generated on a canvas in the riso style: halftone dots, slightly misregistered inks, paper grain and wear. Real scans get the same print treatment once they exist.",
+      },
+      {
+        key: "design",
+        title: "Design",
+        image: junkiAbout,
+        text: "The visual language comes from the zines themselves: warm paper with a grain overlay, fluorescent pink and lime from the riso ink palette, Bricolage Grotesque for display, Space Mono for small print-shop labels, and drawings by Jonas Kleis, one of the collective's artists, behind the pages. There's no checkout and no backend: orders are emailed to the collective with an automatic reply to the buyer, and payment is arranged by hand, with prices shown in both euros and Danish kroner. On phones, the carousel becomes swipe-only, and everything respects reduced-motion settings.",
+      },
+    ],
+    techStack: [
+      {
+        title: "Front-end",
+        items: [
+          "HTML, CSS and vanilla JavaScript",
+          "ES modules + import maps (no build step)",
+          "Three.js (WebGL, physical paper materials)",
+          "Canvas 2D (generated riso covers, mouse trail)",
+          "Lenis (smooth scrolling)",
+        ],
+      },
+      {
+        title: "Services & hosting",
+        items: [
+          "EmailJS (order form, no backend)",
+          "GitHub Pages",
+          "Google Fonts (Bricolage Grotesque, Inter, Space Mono)",
+        ],
+      },
+      {
+        title: "Workflow",
+        items: [
+          "Claude Code (AI pair programmer)",
+          "GitHub pull requests for every iteration",
+          "Live tuning panel (?debug) for motion and lighting",
+        ],
+      },
+    ],
+    conclusions: [
+      {
+        title: "Designing in the medium",
+        text: "Working AI-first let me design directly in the browser instead of in static mockups. Motion, 3D lighting and the feel of a drag can't really be judged in Figma, and here I could react to the real thing in minutes and keep iterating.",
+      },
+      {
+        title: "Precise feedback matters",
+        text: "The quality of the result depended on how clearly I could describe what was wrong: not \"make it nicer\", but \"less empty space under the title on phones\" or \"no zines lingering behind when one opens\". It's the same skill as giving good design feedback to a developer.",
+      },
+      {
+        title: "Small and honest scope",
+        text: "A collective selling a few zines doesn't need a shop. Choosing an emailed order form over payments and accounts kept the site cheap to run and easy for the collective to manage, and put the effort where it matters: making the zines feel real.",
+      },
+    ],
+  },
   {
     slug: "uscore-vehicle-page",
     title: "Redesigning the vehicle overview page for uScore",

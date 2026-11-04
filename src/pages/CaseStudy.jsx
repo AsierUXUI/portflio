@@ -63,6 +63,17 @@ function SectionedCaseStudy({ project }) {
         ))}
       </dl>
 
+      {project.liveUrl && (
+        <a
+          href={project.liveUrl}
+          target="_blank"
+          rel="noreferrer"
+          className="btn btn-primary case-live-link"
+        >
+          Visit the live site ↗
+        </a>
+      )}
+
       {project.sections.map((section) => (
         <section key={section.key} className="case-block">
           <h2>{section.title}</h2>
@@ -76,6 +87,24 @@ function SectionedCaseStudy({ project }) {
           )}
         </section>
       ))}
+
+      {project.techStack?.length > 0 && (
+        <section className="case-section">
+          <h2>Tech stack</h2>
+          <div className="stack-grid">
+            {project.techStack.map((group) => (
+              <div key={group.title} className="stack-group">
+                <h3>{group.title}</h3>
+                <ul>
+                  {group.items.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </section>
+      )}
 
       {project.conclusions?.length > 0 && (
         <section className="case-section">
